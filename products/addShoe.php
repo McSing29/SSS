@@ -64,7 +64,7 @@ if(isset($_SESSION['type']) == 'admin'){
             <input type="text" id="shoe" name="shoe" placeholder="Enter Signature Shoe" required tabindex="1">
 
             <label for="year">Year Released</label>
-            <input type="number" id="year" name="year" placeholder="Enter Year Released" required tabindex="1">
+            <input type="number" id="year" name="year" placeholder="Enter Year Released" required tabindex="1" value="2022">
             
             <label for="brand">Brand</label><br>
                 <select id="brand" name="brand" required tabindex = '10'>
@@ -81,7 +81,7 @@ if(isset($_SESSION['type']) == 'admin'){
             
             
     
-            <input class="button" type="submit" value="addShoe" name="addShoe" tabindex="9">
+            <input class="button" type="submit" value="Add Shoe" name="Add Shoe" tabindex="9">
             <a href="products.php" style ="text-decoration: none;">Go Back</a>
             <?php
             

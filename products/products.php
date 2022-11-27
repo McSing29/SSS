@@ -66,9 +66,9 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="../suppliers/suppliers.php">
                     <i class='bx bx-broadcast' ></i>
-                    <span class="links-name">Report</span>
+                    <span class="links-name">Suppliers</span>
                 </a>
             </li>
             <li>
