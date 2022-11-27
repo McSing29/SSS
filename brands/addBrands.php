@@ -47,7 +47,8 @@ if(isset($_SESSION['type']) == 'admin'){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <title>Add Brand</title>
 </head>
-<body>
+<body  background = "shoe.jpg"><br>
+    
     <div class="login-container">
         <form class="login-form" action="addBrands.php" method="post">
             <div class="logo-details">

@@ -32,8 +32,8 @@
                 </a>
             </li>
             <li>
-                <a href="../brands/brands.php">
-                <i class='bx bx-bitcoin'></i>
+                <a href="../brands/brands.php" >
+                    <i class='bx bx-bitcoin'></i>
                     <span class="links-name">Brands</span>
                 </a>
             </li>
@@ -54,13 +54,13 @@
             }
             ?>
             <li>
-                <a href="../products/products.php" class ="active">
+                <a href="../products/products.php" class = "active">
                     <i class='bx bx-shopping-bag'></i>
                     <span class="links-name">Products</span>
                 </a>
             </li>
             <li>
-                <a href="#" >
+                <a href="../orders/orders.php" >
                     <i class='bx bx-cart-add'></i>
                     <span class="links-name">Orders</span>
                 </a>
@@ -98,91 +98,62 @@
             </div>
         </nav>
         <div class="home-content">
-            
-        <br>
-        </br>
-        
-
-          <div class="charts">
-                    <div class="chart">
-                        <h2> Bar Graph </h2>
-                        
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-                        <body>
-
-                        <canvas id="barChart" style="width:100%;max-width:900px"></canvas>
-
-                        <script>
-                        var xValues = ["World Balance", "Converse", "Adidas", "Air Jordan", "Puma", "Reebok", "Nike", "Vans"];
-                        var yValues = [155, 180, 195, 205, 160, 175, 220, 200];
-                        var barColors = ["red", "green","blue","orange","brown", "yellow", "indigo", "pink"];
-
-                        new Chart("barChart", {
-                        type: "bar",
-                        data: {
-                            labels: xValues,
-                            datasets: [{
-                            backgroundColor: barColors,
-                            data: yValues
-                            }]
-                        },
-                        options: {
-                            legend: {display: false},
-                            title: {
-                            display: true,
-                            text: "SHOE TRENDS AS OF 2022"
-                            }
-                        }
-                        });
-                        </script>
-
-                        </body>
+            <div class="table-container">
+                <div class="table-heading">
+                    <h3 class="table-title">NBA PLAYERS AND THEIR SIGNATURE SHOE</h3>
+                    <?php 
+                    if($_SESSION['type'] == 'admin'){
+                        echo '<input type="button" class="button" value="Add Signature Shoe" onclick="location.href=\'addShoe.php\'">';
+                    }
+                    ?>
                     
-                    </div>
-                    <br> 
-                    </br>
-                    <div class="chart">
-                        <h2> Pie Chart </h2> 
+                
+                </div>
+                <div class="divider-no-border"></div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nba Player</th>
+                            <th>Signature Shoe</th>
+                            <th>Year Released</th>
+                            <th>Brand</th>
+                            <th class="action">Action</th>
+                            
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php  
                         
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-                        <body>
-
-                        <canvas id="myChart" style="width:100%;max-width:900px"></canvas>
-
-                        <script>
-                        var xValues = ["World Balance", "Converse", "Adidas", "Air Jordan", "Puma", "Reebok", "Nike", "Vans"];
-                        var yValues = [155, 180, 195, 205, 160, 175, 220, 200];
-                        var barColors = ["red", "green","blue","orange","brown", "yellow", "indigo", "pink"];
-
-
-                        new Chart("myChart", {
-                        type: "doughnut",
-                        data: {
-                            labels: xValues,
-                            datasets: [{
-                            backgroundColor: barColors,
-                            data: yValues
-                            }]
-                        },
-                        options: {
-                            title: {
-                            display: true,
-                            text: "SHOE TRENDS AS OF 2022"
+                        $file = json_decode(file_get_contents('../database/products.txt', true),true);
+                        $counter = 0;
+                        
+                        foreach ($file as $value) {
+                            $counter++;
+                            echo '<tr>';
+                            echo '<td>'.$counter.'</td>';
+                            echo '<td>'.$value['player'].'</td>';
+                            echo '<td>'.$value['shoe'].'</td>';
+                            echo '<td>'.$value['year'].'</td>';
+                            echo '<td>'.$value['brand'].'</td>';
+                            if($_SESSION['type'] == 'admin'){
+                                echo '<td class="action">
+                                    <a class="action-edit" href="#">Edit</a>
+                                    <a class="action-remove" href="removeShoe.php?index='.$counter.'&player='.$value['player'].'&shoe='.$value['shoe'].'&year='.$value['year'].'&brand='.$value['brand'].'">Remove</a>
+                                </td>';
                             }
+                            echo '</tr>';
+                           
+                            
                         }
-                        });
-                        </script>
-
-                        </body>
-                    </div>
-
-                    
-
-              
-           
-              
-
-
+                        
+                        ?>
+                        
+                    </tbody>
+                </table>
+            </div>
         </div>
-      </section>
-    </html> 
+    </section>
+</body>
+</html>

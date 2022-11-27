@@ -1,0 +1,10 @@
+[{"player":"Stephen Curry","shoe":"Curry 8","year":"2015", "brand": "Under Armour"}, 
+{"player":"Kevin Durant","shoe":"KD 15","year":"2019", "brand": "Nike"},
+{"player":"LeBron James","shoe":"Witness V","year":"2020", "brand": "Nike"},
+{"player":"Kyrie Irving","shoe":"Kyrie 7","year":"2019", "brand": "Nike"},
+{"player":"James Harden","shoe":"Harden Stepback","year":"2018", "brand": "Adidas"},
+{"player":"Klay Thompson","shoe":"Anta KT6","year":"2019", "brand": "Anta"},
+{"player":"Giannis Antetokounmpo","shoe":"Freak 2","year":"2021", "brand": "Nike"},
+{"player":"Damian Lillard","shoe":"Dame 7","year":"2019", "brand": "Adidas"},
+{"player":"Paul George","shoe":"PG 5","year":"2018", "brand": "Adidas"},
+{"player":"Russel Westbrook","shoe":"Why Not Zer0.4","year":"2021", "brand": "Jordan"}]

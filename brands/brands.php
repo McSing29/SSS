@@ -56,7 +56,7 @@
                 </a>
             </li>
             <li>
-                <a href="#" >
+                <a href="../orders/orders.php" >
                     <i class='bx bx-cart-add'></i>
                     <span class="links-name">Orders</span>
                 </a>
@@ -145,6 +145,8 @@
                         
                     </tbody>
                 </table>
+
+                
             </div>
         </div>
     </section>
