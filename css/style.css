@@ -658,9 +658,9 @@ a.button{
 
   .chart {
     background: #f5f5f5;
-    padding: 50px;
-    border-radius: 10px;
+    padding: 40px;
+    border-radius: 50px;
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-    width: 80%;
+    width: 83%;
   }
 
