@@ -40,14 +40,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <title>Login</title>
 </head>
-<body>
+<body background = "shoe.jpg"><br>
     <div class="login-container">
         <form class="login-form" action="login.php" method="post">
             <div class="logo-details">
                 <i class='bx bxl-stripe'></i>
-                <span class="logo-name">Shoe Stock System</span>
+                <span class="logo-name">SHOE STOCK SYSTEM</span>
             </div>
             <hr class="divider">
+            <br>
+            </br>
             <label for="username">Username</label>
             <input type="text" id="username" name="username" placeholder="Enter username" required tabindex="1">
             <br> 
@@ -58,9 +60,7 @@
             </br>
             <input class="button" type="submit" value="Login" name="login" tabindex="3">
             
-            
-            
-            
+        
             
             <br> 
             </br> 
@@ -68,8 +68,7 @@
             </br>
             <br> 
             </br>
-            <br> 
-            </br>
+        
         
             <a href="signup.php" style ="text-decoration: none;">Signup?</a>
             <?php
@@ -84,5 +83,7 @@
             
         </form>
     </div>
+    
+
 </body>
 </html>
