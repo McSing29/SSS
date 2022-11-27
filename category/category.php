@@ -44,7 +44,7 @@
             }
             ?>
             <li>
-                <a href="#" class="active">
+                <a href="../category/category.php" class="active">
                     <i class='bx bx-category-alt'></i>
                     <span class="links-name">Category</span>
                 </a>
@@ -55,7 +55,7 @@
             }
             ?>
             <li>
-                <a href="#">
+                <a href="../products/products.php">
                     <i class='bx bx-shopping-bag'></i>
                     <span class="links-name">Products</span>
                 </a>

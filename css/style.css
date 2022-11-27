@@ -72,7 +72,7 @@
     
     margin: 0 auto;
     background-color: rgba(239, 232, 232, 0.974);
-    border-radius: 5%;
+    border-radius: 4%;
     padding-top: 20px;
     padding-right: 40px;
     padding-bottom: 40px;
@@ -637,7 +637,7 @@ a.button{
     outline: none;
     border-style: none;
     border-radius: 10px;
-    background: #f5f5f5
+    background: #f5f5f5;
 
   }
 
@@ -648,3 +648,23 @@ a.button{
     cursor:pointer;
 
   }
+
+  .charts {
+    display: absolute;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 40px;
+    width: 100%;
+    padding: 50px;
+    padding-top: 50px;
+
+
+  }
+
+  .chart {
+    background: #f5f5f5;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    width: 80%;
+  }
+

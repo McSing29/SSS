@@ -33,7 +33,7 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="active" >
+                <a href="../brands/brands.php" class="active" >
                     <i class='bx bx-bitcoin'></i>
                     <span class="links-name">Brands</span>
                 </a>
@@ -50,7 +50,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="../products/products.php">
                     <i class='bx bx-shopping-bag'></i>
                     <span class="links-name">Products</span>
                 </a>
