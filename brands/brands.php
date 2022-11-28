@@ -134,7 +134,7 @@
                             echo '<td>'.$value['size'].'</td>';
                             if($_SESSION['type'] == 'admin'){
                                 echo '<td class="action">
-                                    <a class="action-edit" href="#">Edit</a>
+                                    <a class="action-edit" href="editBrands.php?index='.$counter.'&brand_name='.$value['brand_name'].'&origin='.$value['origin'].'&brand_status='.$value['brand_status'].'&quantity='.$value['quantity'].'&size='.$value['size'].'">Edit</a>
                                     <a class="action-remove" href="removeBrands.php?index='.$counter.'&brand_name='.$value['brand_name'].'&origin='.$value['origin'].'&brand_status='.$value['brand_status'].'&quantity='.$value['quantity'].'&size='.$value['size'].'">Remove</a>
                                 </td>';
                             }

@@ -48,29 +48,22 @@
                 <span class="logo-name">SHOE STOCK SYSTEM</span>
             </div>
             <hr class="divider">
-            <br>
-            </br>
+            
             <label for="username">Username</label>
             <input type="text" id="username" name="username" placeholder="Enter username" required tabindex="1">
-            <br> 
-            </br>
+            
             <label for="password">Password</label>
             <input type="password" id="password" name="password" placeholder="Enter password" required tabindex="2">
-            <br> 
-            </br>
+            
             <input class="button" type="submit" value="Login" name="login" tabindex="3">
             
         
             
-            <br> 
-            </br> 
-            <br> 
-            </br>
-            <br> 
-            </br>
         
         
-            <a href="signup.php" style ="text-decoration: none;">Signup?</a>
+            <br>
+            </br>
+            <a href="create.php" style ="text-decoration: none;">Create an Account</a>
             <?php
             
                 if(isset($error)){
@@ -78,8 +71,7 @@
                 }
                 
             ?>
-            <br> 
-            </br>
+           
             
         </form>
     </div>

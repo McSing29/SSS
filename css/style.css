@@ -47,6 +47,14 @@
     padding-top: 8px;
 }
 
+.login-container{
+    width: 100%;
+    height: calc(100vh);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+}
 
 .login-form .divider{
     margin-top: 30px;
@@ -59,14 +67,11 @@
 
 .login-form{
     max-width: 400px;
-    
+    max-height: fit-content;
     margin: 0 auto;
     background-color: rgba(233, 239, 232, 0.974);
-    border-radius: 4%;
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;
+    border-radius: 5%;
+    padding: 40px;
     
 }
 
@@ -308,11 +313,11 @@ td a{
 }
   
 a.action-edit{
-    background-color: orange;
+    background-color: rgb(0, 255, 38);
 }
   
 a.action-remove{
-    background-color: lightcoral;
+    background-color: red;
 }
   
 a.action-edit:hover, a.action-remove:hover{
